@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DAF0311-CCA8-42C7-8D52-94DD761FB092}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoTool</RootNamespace>
+    <AssemblyName>DemoTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>toftek.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\DemoTool.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\DemoTool.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cThrobber, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\cThrobber.dll</HintPath>
+    </Reference>
+    <Reference Include="FTD2XX_NET, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\FTD2XX_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextAsianCmaps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\iTextAsianCmaps.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp-WPF, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PdfSharp-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VerticalProgressBar">
+      <HintPath>bin\Debug\VerticalProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="ZGraph, Version=1.0.6240.37747, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cErrorCode.cs" />
+    <Compile Include="cFittingPeakInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cFittingPeakInput.Designer.cs">
+      <DependentUpon>cFittingPeakInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigEditor.Designer.cs">
+      <DependentUpon>ConfigEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cParsePdfReport.cs" />
+    <Compile Include="cProgramDirectory.cs" />
+    <Compile Include="cScanParameters.cs" />
+    <Compile Include="Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo.Designer.cs">
+      <DependentUpon>Demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoTool.cs" />
+    <Compile Include="EnergyDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnergyDiagram.Designer.cs">
+      <DependentUpon>EnergyDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fitting.cs" />
+    <Compile Include="GreenColor.cs" />
+    <Compile Include="HangMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HangMessageBox.Designer.cs">
+      <DependentUpon>HangMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProtocol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProtocol.Designer.cs">
+      <DependentUpon>NewProtocol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="cReportPDFGenerator.cs" />
+    <Compile Include="ScanProtocolConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanProtocolConfig.Designer.cs">
+      <DependentUpon>ScanProtocolConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cFittingPeakInput.resx">
+      <DependentUpon>cFittingPeakInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigEditor.resx">
+      <DependentUpon>ConfigEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo.resx">
+      <DependentUpon>Demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyDiagram.resx">
+      <DependentUpon>EnergyDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HangMessageBox.resx">
+      <DependentUpon>HangMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProtocol.resx">
+      <DependentUpon>NewProtocol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ScanProtocolConfig.resx">
+      <DependentUpon>ScanProtocolConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackWhiteStart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackWhiteStop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteBlackFileExport.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteBlackStartAllPixel.ico" />
+    <None Include="Resources\WhiteBlackStopAllPixel.ico" />
+    <None Include="Resources\RadioButtonWhiteBlack.ico" />
+    <None Include="Resources\GreenButton.ico" />
+    <None Include="Resources\RedButton.ico" />
+    <None Include="Resources\YellowButton.ico" />
+    <None Include="Resources\LockWhiteBlack.ico" />
+    <None Include="Resources\UnlockWhiteBlack.ico" />
+    <None Include="Resources\DonotTouchWhiteBlack.ico" />
+    <None Include="Resources\DonotTouchRed.ico" />
+    <None Include="Resources\RefreshWhiteBlack.ico" />
+    <None Include="Resources\Refresh256x256WhiteBlack.ico" />
+    <None Include="Resources\SaveWhiteBlack.ico" />
+    <None Include="Resources\GreenOff.png" />
+    <None Include="Resources\GreenOn.png" />
+    <None Include="Resources\AxesXY.gif" />
+    <None Include="Resources\round-play-button.png" />
+    <None Include="Resources\stop111.png" />
+    <None Include="Resources\2DStopWhiteBlack.ico" />
+    <None Include="Resources\2DStartWhiteBlack.ico" />
+    <None Include="Resources\favicon.ico" />
+    <None Include="Resources\2DStart.ico" />
+    <None Include="Resources\2DStart2.ico" />
+    <None Include="Resources\2DStart1.ico" />
+    <None Include="Resources\SimpleStart.ico" />
+    <None Include="Resources\SimpleStartBlack.ico" />
+    <None Include="Resources\SimpleCancelBlack.ico" />
+    <None Include="Resources\CircledPlayBlack.png" />
+    <None Include="Resources\CircledPlayBlack.ico" />
+    <None Include="Resources\Hardware-Usb-Disconnected.ico" />
+    <None Include="Resources\Hardware-Usb-Connected.ico" />
+    <None Include="Resources\Hardware-Usb-Logo.ico" />
+    <None Include="Resources\Report.ico" />
+    <None Include="Resources\BarSpinner.gif" />
+    <None Include="Resources\BlackSpinner.gif" />
+    <None Include="Resources\CircleSpinner.gif" />
+    <None Include="Resources\image_1070205.gif" />
+    <None Include="Resources\OvalSpinner.gif" />
+    <None Include="Resources\888_64X64.ico" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\MergeReport.ico" />
+    <None Include="Resources\MergeFileJPG.jpg" />
+    <None Include="Resources\mergefilejpg_Sab_icon.ico" />
+    <None Include="Resources\index_sUe_icon.ico" />
+    <None Include="Resources\index_CDZ_icon.ico" />
+    <Content Include="Resources\toftek.ico" />
+    <None Include="Resources\toftek.png" />
+    <None Include="Resources\XY.png" />
+    <None Include="Resources\WaveGenerator.gif" />
+    <Content Include="toftek.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

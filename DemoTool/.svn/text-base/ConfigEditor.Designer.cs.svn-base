@@ -1,0 +1,415 @@
+﻿namespace DemoTool {
+    partial class ConfigEditor {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
+                components.Dispose ( );
+            }
+            base.Dispose ( disposing );
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( ConfigEditor ) );
+            this.grpReadOnlyParams = new System.Windows.Forms.GroupBox( );
+            this.pnMFGName = new System.Windows.Forms.Panel( );
+            this.txtMFGName = new System.Windows.Forms.TextBox( );
+            this.lblMFGName = new System.Windows.Forms.Label( );
+            this.grpWriteParams = new System.Windows.Forms.GroupBox( );
+            this.grpReportCustomize = new System.Windows.Forms.GroupBox( );
+            this.lblIncludeEnergyCount = new System.Windows.Forms.Label( );
+            this.rdIncludeEnergyCount = new System.Windows.Forms.PictureBox( );
+            this.lblIncludeEnergySpectrum = new System.Windows.Forms.Label( );
+            this.rdIncludeEnergySpectrum = new System.Windows.Forms.PictureBox( );
+            this.lblEnergyResolution = new System.Windows.Forms.Label( );
+            this.rdEnergyResolution = new System.Windows.Forms.PictureBox( );
+            this.panel2 = new System.Windows.Forms.Panel( );
+            this.txtBinSize = new System.Windows.Forms.TextBox( );
+            this.lblBinSize = new System.Windows.Forms.Label( );
+            this.panel1 = new System.Windows.Forms.Panel( );
+            this.txtMaxEnergyCountPerPixel = new System.Windows.Forms.TextBox( );
+            this.lblMaxEnergyCountPerPixel = new System.Windows.Forms.Label( );
+            this.cbLanguage = new System.Windows.Forms.ComboBox( );
+            this.lblLanguage = new System.Windows.Forms.Label( );
+            this.btnSaveFactoryConfig = new System.Windows.Forms.Button( );
+            this.btnConfigRefresh = new System.Windows.Forms.Button( );
+            this.gpConfigVbias = new System.Windows.Forms.GroupBox( );
+            this.lblAutoAdjustVbias = new System.Windows.Forms.Label( );
+            this.rdEnableAutoVbiasAdjust = new System.Windows.Forms.PictureBox( );
+            this.grpReadOnlyParams.SuspendLayout( );
+            this.pnMFGName.SuspendLayout( );
+            this.grpWriteParams.SuspendLayout( );
+            this.grpReportCustomize.SuspendLayout( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdIncludeEnergyCount ) ).BeginInit( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdIncludeEnergySpectrum ) ).BeginInit( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdEnergyResolution ) ).BeginInit( );
+            this.panel2.SuspendLayout( );
+            this.panel1.SuspendLayout( );
+            this.gpConfigVbias.SuspendLayout( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdEnableAutoVbiasAdjust ) ).BeginInit( );
+            this.SuspendLayout( );
+            // 
+            // grpReadOnlyParams
+            // 
+            this.grpReadOnlyParams.BackColor = System.Drawing.Color.Transparent;
+            this.grpReadOnlyParams.Controls.Add( this.pnMFGName );
+            this.grpReadOnlyParams.Controls.Add( this.lblMFGName );
+            this.grpReadOnlyParams.Font = new System.Drawing.Font( "Microsoft Sans Serif", 7.8F, ( ( System.Drawing.FontStyle )( ( System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic ) ) ), System.Drawing.GraphicsUnit.Point, ( ( byte )( 0 ) ) );
+            this.grpReadOnlyParams.Location = new System.Drawing.Point( 12, 12 );
+            this.grpReadOnlyParams.Name = "grpReadOnlyParams";
+            this.grpReadOnlyParams.Size = new System.Drawing.Size( 701, 203 );
+            this.grpReadOnlyParams.TabIndex = 0;
+            this.grpReadOnlyParams.TabStop = false;
+            this.grpReadOnlyParams.Text = "Factory Default Parameters(Read Only)";
+            // 
+            // pnMFGName
+            // 
+            this.pnMFGName.BackColor = System.Drawing.Color.Black;
+            this.pnMFGName.Controls.Add( this.txtMFGName );
+            this.pnMFGName.Location = new System.Drawing.Point( 77, 20 );
+            this.pnMFGName.Name = "pnMFGName";
+            this.pnMFGName.Size = new System.Drawing.Size( 101, 20 );
+            this.pnMFGName.TabIndex = 6;
+            // 
+            // txtMFGName
+            // 
+            this.txtMFGName.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMFGName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMFGName.Font = new System.Drawing.Font( "Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte )( 0 ) ) );
+            this.txtMFGName.Location = new System.Drawing.Point( 1, 1 );
+            this.txtMFGName.Name = "txtMFGName";
+            this.txtMFGName.Size = new System.Drawing.Size( 100, 19 );
+            this.txtMFGName.TabIndex = 5;
+            this.txtMFGName.Text = "TOFTEK";
+            // 
+            // lblMFGName
+            // 
+            this.lblMFGName.AutoSize = true;
+            this.lblMFGName.Location = new System.Drawing.Point( 6, 23 );
+            this.lblMFGName.Name = "lblMFGName";
+            this.lblMFGName.Size = new System.Drawing.Size( 73, 13 );
+            this.lblMFGName.TabIndex = 0;
+            this.lblMFGName.Text = "MFG Name:";
+            // 
+            // grpWriteParams
+            // 
+            this.grpWriteParams.Controls.Add( this.gpConfigVbias );
+            this.grpWriteParams.Controls.Add( this.grpReportCustomize );
+            this.grpWriteParams.Controls.Add( this.panel2 );
+            this.grpWriteParams.Controls.Add( this.lblBinSize );
+            this.grpWriteParams.Controls.Add( this.panel1 );
+            this.grpWriteParams.Controls.Add( this.lblMaxEnergyCountPerPixel );
+            this.grpWriteParams.Controls.Add( this.cbLanguage );
+            this.grpWriteParams.Controls.Add( this.lblLanguage );
+            this.grpWriteParams.Font = new System.Drawing.Font( "Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte )( 0 ) ) );
+            this.grpWriteParams.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grpWriteParams.Location = new System.Drawing.Point( 12, 233 );
+            this.grpWriteParams.Name = "grpWriteParams";
+            this.grpWriteParams.Size = new System.Drawing.Size( 701, 283 );
+            this.grpWriteParams.TabIndex = 1;
+            this.grpWriteParams.TabStop = false;
+            this.grpWriteParams.Text = "Factory Default Parameters(Configurable)";
+            // 
+            // grpReportCustomize
+            // 
+            this.grpReportCustomize.Controls.Add( this.lblIncludeEnergyCount );
+            this.grpReportCustomize.Controls.Add( this.rdIncludeEnergyCount );
+            this.grpReportCustomize.Controls.Add( this.lblIncludeEnergySpectrum );
+            this.grpReportCustomize.Controls.Add( this.rdIncludeEnergySpectrum );
+            this.grpReportCustomize.Controls.Add( this.lblEnergyResolution );
+            this.grpReportCustomize.Controls.Add( this.rdEnergyResolution );
+            this.grpReportCustomize.Location = new System.Drawing.Point( 7, 114 );
+            this.grpReportCustomize.Margin = new System.Windows.Forms.Padding( 2 );
+            this.grpReportCustomize.Name = "grpReportCustomize";
+            this.grpReportCustomize.Padding = new System.Windows.Forms.Padding( 2 );
+            this.grpReportCustomize.Size = new System.Drawing.Size( 271, 108 );
+            this.grpReportCustomize.TabIndex = 14;
+            this.grpReportCustomize.TabStop = false;
+            this.grpReportCustomize.Text = "Options In Report";
+            // 
+            // lblIncludeEnergyCount
+            // 
+            this.lblIncludeEnergyCount.AutoSize = true;
+            this.lblIncludeEnergyCount.Location = new System.Drawing.Point( 40, 66 );
+            this.lblIncludeEnergyCount.Name = "lblIncludeEnergyCount";
+            this.lblIncludeEnergyCount.Size = new System.Drawing.Size( 83, 13 );
+            this.lblIncludeEnergyCount.TabIndex = 75;
+            this.lblIncludeEnergyCount.Text = "Energy Count";
+            // 
+            // rdIncludeEnergyCount
+            // 
+            this.rdIncludeEnergyCount.Image = global::DemoTool.Properties.Resources.GreenOn;
+            this.rdIncludeEnergyCount.Location = new System.Drawing.Point( 8, 66 );
+            this.rdIncludeEnergyCount.Name = "rdIncludeEnergyCount";
+            this.rdIncludeEnergyCount.Size = new System.Drawing.Size( 16, 16 );
+            this.rdIncludeEnergyCount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.rdIncludeEnergyCount.TabIndex = 74;
+            this.rdIncludeEnergyCount.TabStop = false;
+            this.rdIncludeEnergyCount.Tag = "on";
+            this.rdIncludeEnergyCount.Click += new System.EventHandler( this.rdIncludeEnergyCount_Click );
+            // 
+            // lblIncludeEnergySpectrum
+            // 
+            this.lblIncludeEnergySpectrum.AutoSize = true;
+            this.lblIncludeEnergySpectrum.Location = new System.Drawing.Point( 40, 43 );
+            this.lblIncludeEnergySpectrum.Name = "lblIncludeEnergySpectrum";
+            this.lblIncludeEnergySpectrum.Size = new System.Drawing.Size( 103, 13 );
+            this.lblIncludeEnergySpectrum.TabIndex = 73;
+            this.lblIncludeEnergySpectrum.Text = "Energy Spectrum";
+            // 
+            // rdIncludeEnergySpectrum
+            // 
+            this.rdIncludeEnergySpectrum.Image = global::DemoTool.Properties.Resources.GreenOn;
+            this.rdIncludeEnergySpectrum.Location = new System.Drawing.Point( 8, 43 );
+            this.rdIncludeEnergySpectrum.Name = "rdIncludeEnergySpectrum";
+            this.rdIncludeEnergySpectrum.Size = new System.Drawing.Size( 16, 16 );
+            this.rdIncludeEnergySpectrum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.rdIncludeEnergySpectrum.TabIndex = 72;
+            this.rdIncludeEnergySpectrum.TabStop = false;
+            this.rdIncludeEnergySpectrum.Tag = "on";
+            this.rdIncludeEnergySpectrum.Click += new System.EventHandler( this.rdIncludeEnergySpectrum_Click );
+            // 
+            // lblEnergyResolution
+            // 
+            this.lblEnergyResolution.AutoSize = true;
+            this.lblEnergyResolution.Location = new System.Drawing.Point( 40, 23 );
+            this.lblEnergyResolution.Name = "lblEnergyResolution";
+            this.lblEnergyResolution.Size = new System.Drawing.Size( 110, 13 );
+            this.lblEnergyResolution.TabIndex = 71;
+            this.lblEnergyResolution.Text = "Energy Resolution";
+            // 
+            // rdEnergyResolution
+            // 
+            this.rdEnergyResolution.Image = global::DemoTool.Properties.Resources.GreenOn;
+            this.rdEnergyResolution.Location = new System.Drawing.Point( 8, 24 );
+            this.rdEnergyResolution.Name = "rdEnergyResolution";
+            this.rdEnergyResolution.Size = new System.Drawing.Size( 16, 16 );
+            this.rdEnergyResolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.rdEnergyResolution.TabIndex = 70;
+            this.rdEnergyResolution.TabStop = false;
+            this.rdEnergyResolution.Tag = "on";
+            this.rdEnergyResolution.Click += new System.EventHandler( this.rdEnergyResolution_Click );
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add( this.txtBinSize );
+            this.panel2.Location = new System.Drawing.Point( 178, 77 );
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size( 101, 20 );
+            this.panel2.TabIndex = 12;
+            // 
+            // txtBinSize
+            // 
+            this.txtBinSize.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBinSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBinSize.Font = new System.Drawing.Font( "Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte )( 0 ) ) );
+            this.txtBinSize.Location = new System.Drawing.Point( 1, 1 );
+            this.txtBinSize.Name = "txtBinSize";
+            this.txtBinSize.Size = new System.Drawing.Size( 100, 19 );
+            this.txtBinSize.TabIndex = 5;
+            this.txtBinSize.Text = "100";
+            // 
+            // lblBinSize
+            // 
+            this.lblBinSize.AutoSize = true;
+            this.lblBinSize.Location = new System.Drawing.Point( 6, 84 );
+            this.lblBinSize.Name = "lblBinSize";
+            this.lblBinSize.Size = new System.Drawing.Size( 53, 13 );
+            this.lblBinSize.TabIndex = 12;
+            this.lblBinSize.Text = "BinSize:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add( this.txtMaxEnergyCountPerPixel );
+            this.panel1.Location = new System.Drawing.Point( 177, 47 );
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size( 101, 20 );
+            this.panel1.TabIndex = 11;
+            // 
+            // txtMaxEnergyCountPerPixel
+            // 
+            this.txtMaxEnergyCountPerPixel.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMaxEnergyCountPerPixel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaxEnergyCountPerPixel.Font = new System.Drawing.Font( "Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte )( 0 ) ) );
+            this.txtMaxEnergyCountPerPixel.Location = new System.Drawing.Point( 1, 1 );
+            this.txtMaxEnergyCountPerPixel.Name = "txtMaxEnergyCountPerPixel";
+            this.txtMaxEnergyCountPerPixel.Size = new System.Drawing.Size( 100, 19 );
+            this.txtMaxEnergyCountPerPixel.TabIndex = 5;
+            this.txtMaxEnergyCountPerPixel.Text = "65536";
+            // 
+            // lblMaxEnergyCountPerPixel
+            // 
+            this.lblMaxEnergyCountPerPixel.AutoSize = true;
+            this.lblMaxEnergyCountPerPixel.Location = new System.Drawing.Point( 6, 54 );
+            this.lblMaxEnergyCountPerPixel.Name = "lblMaxEnergyCountPerPixel";
+            this.lblMaxEnergyCountPerPixel.Size = new System.Drawing.Size( 172, 13 );
+            this.lblMaxEnergyCountPerPixel.TabIndex = 9;
+            this.lblMaxEnergyCountPerPixel.Text = "Max Energy Count(Per Pixel):";
+            // 
+            // cbLanguage
+            // 
+            this.cbLanguage.AutoCompleteCustomSource.AddRange( new string[] {
+            "English",
+            "简体中文"} );
+            this.cbLanguage.FormattingEnabled = true;
+            this.cbLanguage.Items.AddRange( new object[] {
+            "简体中文",
+            "English"} );
+            this.cbLanguage.Location = new System.Drawing.Point( 178, 23 );
+            this.cbLanguage.Margin = new System.Windows.Forms.Padding( 2 );
+            this.cbLanguage.Name = "cbLanguage";
+            this.cbLanguage.Size = new System.Drawing.Size( 101, 21 );
+            this.cbLanguage.TabIndex = 8;
+            this.cbLanguage.SelectionChangeCommitted += new System.EventHandler( this.cbLanguage_SelectionChangeCommitted );
+            // 
+            // lblLanguage
+            // 
+            this.lblLanguage.AutoSize = true;
+            this.lblLanguage.Location = new System.Drawing.Point( 6, 23 );
+            this.lblLanguage.Name = "lblLanguage";
+            this.lblLanguage.Size = new System.Drawing.Size( 67, 13 );
+            this.lblLanguage.TabIndex = 7;
+            this.lblLanguage.Text = "Language:";
+            // 
+            // btnSaveFactoryConfig
+            // 
+            this.btnSaveFactoryConfig.BackColor = System.Drawing.Color.Transparent;
+            this.btnSaveFactoryConfig.FlatAppearance.BorderColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnSaveFactoryConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveFactoryConfig.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSaveFactoryConfig.Image = global::DemoTool.Properties.Resources.SaveWhiteBlack;
+            this.btnSaveFactoryConfig.Location = new System.Drawing.Point( 607, 522 );
+            this.btnSaveFactoryConfig.Name = "btnSaveFactoryConfig";
+            this.btnSaveFactoryConfig.Size = new System.Drawing.Size( 48, 43 );
+            this.btnSaveFactoryConfig.TabIndex = 2;
+            this.btnSaveFactoryConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSaveFactoryConfig.UseVisualStyleBackColor = false;
+            this.btnSaveFactoryConfig.Click += new System.EventHandler( this.btnSaveFactoryConfig_Click );
+            // 
+            // btnConfigRefresh
+            // 
+            this.btnConfigRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfigRefresh.FlatAppearance.BorderColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnConfigRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfigRefresh.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnConfigRefresh.Image = global::DemoTool.Properties.Resources.Refresh256x256WhiteBlack;
+            this.btnConfigRefresh.Location = new System.Drawing.Point( 12, 534 );
+            this.btnConfigRefresh.Name = "btnConfigRefresh";
+            this.btnConfigRefresh.Size = new System.Drawing.Size( 48, 43 );
+            this.btnConfigRefresh.TabIndex = 0;
+            this.btnConfigRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnConfigRefresh.UseVisualStyleBackColor = false;
+            // 
+            // gpConfigVbias
+            // 
+            this.gpConfigVbias.Controls.Add( this.lblAutoAdjustVbias );
+            this.gpConfigVbias.Controls.Add( this.rdEnableAutoVbiasAdjust );
+            this.gpConfigVbias.Location = new System.Drawing.Point( 9, 226 );
+            this.gpConfigVbias.Margin = new System.Windows.Forms.Padding( 2 );
+            this.gpConfigVbias.Name = "gpConfigVbias";
+            this.gpConfigVbias.Padding = new System.Windows.Forms.Padding( 2 );
+            this.gpConfigVbias.Size = new System.Drawing.Size( 269, 48 );
+            this.gpConfigVbias.TabIndex = 76;
+            this.gpConfigVbias.TabStop = false;
+            this.gpConfigVbias.Text = "Configuration for VBIAS";
+            // 
+            // lblAutoAdjustVbias
+            // 
+            this.lblAutoAdjustVbias.AutoSize = true;
+            this.lblAutoAdjustVbias.Location = new System.Drawing.Point( 40, 23 );
+            this.lblAutoAdjustVbias.Name = "lblAutoAdjustVbias";
+            this.lblAutoAdjustVbias.Size = new System.Drawing.Size( 147, 13 );
+            this.lblAutoAdjustVbias.TabIndex = 71;
+            this.lblAutoAdjustVbias.Text = "Auto Temperature Adjust";
+            // 
+            // rdEnableAutoVbiasAdjust
+            // 
+            this.rdEnableAutoVbiasAdjust.Image = global::DemoTool.Properties.Resources.GreenOn;
+            this.rdEnableAutoVbiasAdjust.Location = new System.Drawing.Point( 8, 24 );
+            this.rdEnableAutoVbiasAdjust.Name = "rdEnableAutoVbiasAdjust";
+            this.rdEnableAutoVbiasAdjust.Size = new System.Drawing.Size( 16, 16 );
+            this.rdEnableAutoVbiasAdjust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.rdEnableAutoVbiasAdjust.TabIndex = 70;
+            this.rdEnableAutoVbiasAdjust.TabStop = false;
+            this.rdEnableAutoVbiasAdjust.Tag = "on";
+            this.rdEnableAutoVbiasAdjust.Click += new System.EventHandler( this.rdEnableAutoVbiasAdjust_Click );
+            // 
+            // ConfigEditor
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size( 725, 603 );
+            this.Controls.Add( this.btnSaveFactoryConfig );
+            this.Controls.Add( this.btnConfigRefresh );
+            this.Controls.Add( this.grpWriteParams );
+            this.Controls.Add( this.grpReadOnlyParams );
+            this.Icon = ( ( System.Drawing.Icon )( resources.GetObject( "$this.Icon" ) ) );
+            this.Name = "ConfigEditor";
+            this.Text = "ConfigEditor";
+            this.grpReadOnlyParams.ResumeLayout( false );
+            this.grpReadOnlyParams.PerformLayout( );
+            this.pnMFGName.ResumeLayout( false );
+            this.pnMFGName.PerformLayout( );
+            this.grpWriteParams.ResumeLayout( false );
+            this.grpWriteParams.PerformLayout( );
+            this.grpReportCustomize.ResumeLayout( false );
+            this.grpReportCustomize.PerformLayout( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdIncludeEnergyCount ) ).EndInit( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdIncludeEnergySpectrum ) ).EndInit( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdEnergyResolution ) ).EndInit( );
+            this.panel2.ResumeLayout( false );
+            this.panel2.PerformLayout( );
+            this.panel1.ResumeLayout( false );
+            this.panel1.PerformLayout( );
+            this.gpConfigVbias.ResumeLayout( false );
+            this.gpConfigVbias.PerformLayout( );
+            ( ( System.ComponentModel.ISupportInitialize )( this.rdEnableAutoVbiasAdjust ) ).EndInit( );
+            this.ResumeLayout( false );
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox grpReadOnlyParams;
+        private System.Windows.Forms.GroupBox grpWriteParams;
+        private System.Windows.Forms.Button btnConfigRefresh;
+        private System.Windows.Forms.Label lblMFGName;
+        private System.Windows.Forms.TextBox txtMFGName;
+        private System.Windows.Forms.Panel pnMFGName;
+        private System.Windows.Forms.Button btnSaveFactoryConfig;
+        private System.Windows.Forms.ComboBox cbLanguage;
+        private System.Windows.Forms.Label lblLanguage;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtMaxEnergyCountPerPixel;
+        private System.Windows.Forms.Label lblMaxEnergyCountPerPixel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtBinSize;
+        private System.Windows.Forms.Label lblBinSize;
+        private System.Windows.Forms.GroupBox grpReportCustomize;
+        private System.Windows.Forms.Label lblEnergyResolution;
+        private System.Windows.Forms.PictureBox rdEnergyResolution;
+        private System.Windows.Forms.Label lblIncludeEnergySpectrum;
+        private System.Windows.Forms.PictureBox rdIncludeEnergySpectrum;
+        private System.Windows.Forms.Label lblIncludeEnergyCount;
+        private System.Windows.Forms.PictureBox rdIncludeEnergyCount;
+        private System.Windows.Forms.GroupBox gpConfigVbias;
+        private System.Windows.Forms.Label lblAutoAdjustVbias;
+        private System.Windows.Forms.PictureBox rdEnableAutoVbiasAdjust;
+    }
+}

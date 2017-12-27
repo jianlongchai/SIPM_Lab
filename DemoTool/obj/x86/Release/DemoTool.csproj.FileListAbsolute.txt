@@ -1,0 +1,8 @@
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.ConfigEditor.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.Demo.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.EnergyDiagram.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.HangMessageBox.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.NewProtocol.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.Properties.Resources.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.ScanProtocolConfig.resources
+C:\Development\2017\Bug Fix\DemoTool\DemoTool\DemoTool\obj\x86\Release\DemoTool.csproj.GenerateResource.Cache

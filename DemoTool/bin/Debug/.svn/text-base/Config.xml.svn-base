@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ConfigParamContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SerialNo>study=1;series=2;reconid=3</SerialNo>
+  <ParameterList>
+	<ConfigParamPair>
+      <key>Language</key>
+      <value>Chinese</value>
+    </ConfigParamPair>
+    <ConfigParamPair>
+      <key>PixelNo</key>
+      <value>256</value>
+    </ConfigParamPair>
+    <ConfigParamPair>
+      <key>DefaultTriggerCount</key>
+      <value>1000000</value>
+    </ConfigParamPair>
+	<ConfigParamPair>
+      <key>MaxEnergyCount</key>
+      <value>636</value>
+    </ConfigParamPair>
+	<ConfigParamPair>
+      <key>BinSize</key>
+      <value>100</value>
+    </ConfigParamPair>
+    <ConfigParamPair>
+      <key>DefaultColor</key>
+      <value>$Id: MainWindow.xaml.cs 16937 2016-07-02 08:27:16Z danielc $</value>
+    </ConfigParamPair>
+  </ParameterList>
+
+</ConfigParamContainer>
